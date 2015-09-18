@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": {"model": "leadMod:blocks/lead_block"}
+    }
+  }
