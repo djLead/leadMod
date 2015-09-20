@@ -23,16 +23,7 @@ public class CommonProxy {
 
     }
 
-//
-//
-//    public void preInit() {
-//
-//        myItems.createItems();
-//    }
-//
-//    public abstract void init();
-//
-//    public abstract void postInit();
+
 
 }
 
