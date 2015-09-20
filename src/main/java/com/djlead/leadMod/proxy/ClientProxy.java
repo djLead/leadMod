@@ -1,37 +1,33 @@
 package com.djlead.leadMod.proxy;
 
-import com.djlead.leadMod.init.newBlocks;
-import com.djlead.leadMod.init.newItems;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-/**
+import com.djlead.leadMod.items.myItems;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+
+/** Client Proxy
  * Created by Lead on 11-9-2015.
  */
+
 public class ClientProxy extends CommonProxy {
 
     @Override
-    public void registerRenders() {
+    public void preInit() {
+        // Keybindings,
 
-        newBlocks.registerRenders();
-        newItems.registerRenders();
+    }
 
+    @Override
+    public void init() {
+
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(myItems.LeadDisc, 0, new ModelResourceLocation("leadMod:lead_disc", "inventory"));
     }
 
 
     @Override
-    public void preInit(FMLPreInitializationEvent event) {
-        super.preInit(event);
+    public void postInit() {
+
     }
 
-    @Override
-    public void init(FMLInitializationEvent event) {
-        super.init(event);
-    }
-    @Override
-    public void postInit(FMLPostInitializationEvent event) {
-        super.postInit(event);
-    }
 }
 

@@ -1,25 +1,28 @@
 package com.djlead.leadMod.proxy;
 
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-/**
+
+/** Server Proxy
  * Created by Lead on 11-9-2015.
  */
+
 public class ServerProxy extends CommonProxy {
 
+
+
     @Override
-    public void preInit(FMLPreInitializationEvent event) {
-        super.preInit(event);
+    public void preInit() {
+
     }
 
     @Override
-    public void init(FMLInitializationEvent event) {
-        super.init(event);
+    public void init() {
+
     }
     @Override
-    public void postInit(FMLPostInitializationEvent event) {
-        super.postInit(event);
+    public void postInit() {
+
     }
+
+
 }

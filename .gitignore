@@ -1,23 +1,14 @@
-# Built application files
-*.apk
-*.ap_
-
-# Files for the Dalvik VM
-*.dex
-
-# Java class files
-*.class
-
-# Generated files
-bin/
-gen/
 
 # Gradle files
 .gradle/
 build/
 /*/build/
+gradlew*
+
 out/*
 eclipse/*
+_backup/*
+
 
 # Local configuration file (sdk path, etc)
 local.properties
