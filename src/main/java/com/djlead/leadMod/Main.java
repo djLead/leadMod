@@ -24,25 +24,21 @@ public class Main {
     @SidedProxy(modId=Reference.MODID, clientSide="com.djlead.leadMod.proxy.ClientProxy", serverSide="com.djlead.leadMod.proxy.ServerProxy")
     public static CommonProxy proxy;
 
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
 
-        //PreInits Handler used for creating blocks, items, plugin APIs and to register item/blocks with GameRegistry
-        proxy.preInit();
+    @EventHandler    //PreInits Handler used for creating blocks, items, plugin APIs and to register item/blocks with GameRegistry
+    public void preInit(FMLPreInitializationEvent e) {
+        proxy.preInit(e);
     }
 
-    @EventHandler
-    public void init(FMLInitializationEvent event) {
-
-        // Init build ui data structures, crafting recipes and register new handler and API useage
-        proxy.init();
+    @EventHandler    // Init build ui data structures, crafting recipes and register new handler and API useage
+    public void init(FMLInitializationEvent e) {
+        proxy.init(e);
     }
 
-    @EventHandler
-    public void postInit(FMLPostInitializationEvent event) {
-
-        //Postinit deals with communication with other mods
-        proxy.postInit();
+    @EventHandler    //Postinit deals with communication with other mods
+    public void postInit(FMLPostInitializationEvent e) {
+        proxy.postInit(e);
     }
+
 
 }

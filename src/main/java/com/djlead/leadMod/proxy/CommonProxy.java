@@ -9,16 +9,30 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  * Created by Lead on 11-9-2015.
  */
 
-public abstract class CommonProxy {
+public class CommonProxy {
 
-    public void preInit() {
-
+    public void preInit(FMLPreInitializationEvent e) {
         myItems.createItems();
     }
 
-    public abstract void init();
+    public void init(FMLInitializationEvent e) {
 
-    public abstract void postInit();
+    }
+
+    public void postInit(FMLPostInitializationEvent e) {
+
+    }
+
+//
+//
+//    public void preInit() {
+//
+//        myItems.createItems();
+//    }
+//
+//    public abstract void init();
+//
+//    public abstract void postInit();
 
 }
 

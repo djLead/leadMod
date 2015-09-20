@@ -72,3 +72,7 @@ processResources
 sourceSets {
     main { output.resourcesDir = output.classesDir }
 }
+
+// fix to solve missing models
+
+idea { module { inheritOutputDirs = true } }
