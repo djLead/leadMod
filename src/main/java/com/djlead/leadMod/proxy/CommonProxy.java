@@ -1,6 +1,6 @@
-package com.djlead.leadMod.proxy;
+package com.djlead.leadmod.proxy;
 
-import com.djlead.leadMod.items.myItems;
+import com.djlead.leadmod.items.myItems;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

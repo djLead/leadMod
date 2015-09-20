@@ -1,7 +1,7 @@
-package com.djlead.leadMod.client.render.items;
+package com.djlead.leadmod.client.render.items;
 
-import com.djlead.leadMod.Reference;
-import com.djlead.leadMod.items.myItems;
+import com.djlead.leadmod.Reference;
+import com.djlead.leadmod.items.myItems;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;

@@ -1,4 +1,4 @@
-package com.djlead.leadMod;
+package com.djlead.leadmod;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import com.djlead.leadMod.proxy.CommonProxy;
+import com.djlead.leadmod.proxy.CommonProxy;
 
 /** Main Class
  *  Created by Lead on 11-9-2015.
@@ -21,7 +21,7 @@ public class Main {
     @Instance(value=Reference.MODID)
     public static Main instance;
 
-    @SidedProxy(modId=Reference.MODID, clientSide="com.djlead.leadMod.proxy.ClientProxy", serverSide="com.djlead.leadMod.proxy.ServerProxy")
+    @SidedProxy(modId=Reference.MODID, clientSide="com.djlead.leadmod.proxy.ClientProxy", serverSide="com.djlead.leadmod.proxy.ServerProxy")
     public static CommonProxy proxy;
 
 

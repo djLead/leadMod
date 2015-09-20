@@ -1,6 +1,7 @@
 {
     "parent":"leadMod:item/standard_item",
     "textures": {
-        "layer0":"leadMod:items/lead_disc"
+        "layer0":"leadMod:items/lead_disc.png"
     }
+
 }

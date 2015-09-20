@@ -1,4 +1,4 @@
-package com.djlead.leadMod.proxy;
+package com.djlead.leadmod.proxy;
 
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

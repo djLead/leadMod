@@ -1,4 +1,4 @@
-package com.djlead.leadMod.items;
+package com.djlead.leadmod.items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

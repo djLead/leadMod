@@ -1,9 +1,6 @@
-package com.djlead.leadMod.proxy;
+package com.djlead.leadmod.proxy;
 
-
-import com.djlead.leadMod.items.myItems;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
+import com.djlead.leadmod.client.render.items.ItemRenderRegister;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -24,8 +21,7 @@ public class ClientProxy extends CommonProxy {
     public void init(FMLInitializationEvent e) {
         super.init(e);
 
-    //    ItemRenderRegister.registerItemRenderer();
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(myItems.LeadDisc, 0, new ModelResourceLocation("leadMod:lead_disc", "inventory"));
+        ItemRenderRegister.registerItemRenderer();
 
     }
 
@@ -33,28 +29,6 @@ public class ClientProxy extends CommonProxy {
     public void postInit(FMLPostInitializationEvent e) {
         super.postInit(e);
     }
-
-//
-//
-//    @Override
-//    public void preInit() {
-//        // Keybindings,
-//
-//    }
-//
-//    @Override
-//    public void init() {
-//
-//        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(myItems.LeadDisc, 0, new ModelResourceLocation("leadMod:lead_disc", "inventory"));
-//    }
-//
-//
-//    @Override
-//    public void postInit() {
-//
-//    }
-//
-//
 
 }
 
