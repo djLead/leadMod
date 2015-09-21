@@ -11,5 +11,8 @@ public class Reference {
     public static final String MODVERSION = "1.0-1.8";
     // also change mod version in /assets/mcmod.info
 
+    public static final  String CLIENT_PROXY = "com.djlead.leadmod.proxy.ClientProxy";
+    public static final  String SERVER_PROXY = "com.djlead.leadmod.proxy.ServerProxy";
+
 
 }

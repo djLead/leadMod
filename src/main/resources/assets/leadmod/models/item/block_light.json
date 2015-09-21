@@ -1,5 +1,5 @@
 {
-  "parent":"leadmod:block/lead_block",
+  "parent": "leadmod:block/block_light",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],
