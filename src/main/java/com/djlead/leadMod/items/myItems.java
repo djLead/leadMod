@@ -3,15 +3,16 @@ package com.djlead.leadmod.items;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-/** myItems - register custom items
+/** MyItems - register custom items
  * Created by Lead on 19-9-2015.
  */
-public final class myItems {
+public final class MyItems {
 
-    public static Item LeadDisc;
+    public static Item lead_disc;
 
     public static void createItems() {
 
-        GameRegistry.registerItem(LeadDisc = new basicItem("lead_disc"), "lead_disc");
+        GameRegistry.registerItem(lead_disc = new BasicItem("lead_disc"), "lead_disc");
+
     }
 }

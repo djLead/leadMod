@@ -18,8 +18,8 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.0"
-group= "com.djlead.leadMod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "leadMod"
+group= "com.djlead.leadmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "leadmod"
 
 minecraft {
     version = "1.8-11.14.3.1450"
@@ -49,6 +49,7 @@ dependencies {
 
 }
 
+
 processResources
 {
     // this will ensure that this task is redone when the versions change.
@@ -73,6 +74,6 @@ sourceSets {
     main { output.resourcesDir = output.classesDir }
 }
 
-// fix to solve missing models
 
-idea { module { inheritOutputDirs = true } }
+// fix to solve missing models
+//idea { module { inheritOutputDirs = true } }
