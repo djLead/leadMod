@@ -4,6 +4,7 @@ import com.djlead.leadmod.init.MyBlocks;
 import com.djlead.leadmod.init.MyItems;
 import com.djlead.leadmod.init.MyRecipes;
 import com.djlead.leadmod.init.MyTab;
+import com.djlead.leadmod.worldgen.WorldGeneratorOre;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -13,6 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.djlead.leadmod.proxy.CommonProxy;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 /** Main Class
@@ -49,8 +51,11 @@ public class Main {
 
         proxy.registerRenders();
 
+        GameRegistry.registerWorldGenerator(new WorldGeneratorOre(), 0);
+
         // Add custom recipes
         MyRecipes.makeRecipes();
+
 
     }
 

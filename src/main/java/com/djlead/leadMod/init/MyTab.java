@@ -13,6 +13,7 @@ public class MyTab extends CreativeTabs {
         this.setBackgroundImageName("leadmod.png");
     }
 
+    // set tab icon
     @Override
     public Item getTabIconItem() {
         return MyItems.item_ring;

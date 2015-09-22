@@ -9,7 +9,7 @@ import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-/**
+/** MyBlocks All generated blocks
  * Created by Lead on 21-9-2015.
  */
 public class MyBlocks {
