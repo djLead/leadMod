@@ -3,6 +3,7 @@ package com.djlead.leadmod;
 import com.djlead.leadmod.crafting.ModCrafting;
 import com.djlead.leadmod.init.MyBlocks;
 import com.djlead.leadmod.init.MyItems;
+import com.djlead.leadmod.init.MyRecipes;
 import com.djlead.leadmod.init.MyTab;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -50,7 +51,7 @@ public class Main {
     public void init(FMLInitializationEvent event) {
         proxy.registerRenders();
 
-        ModCrafting.makeRecipes();
+        MyRecipes.makeRecipes();
 
     }
 

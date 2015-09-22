@@ -5,7 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
-/**
+/** Block Object
  * Created by Lead on 21-9-2015.
  */
 public class MyBlockObject extends Block {

@@ -15,7 +15,8 @@ public final class MyItems {
     public static Item item_ring;
 
     public static void  InitItem() {
-        item_ring = new Item().setUnlocalizedName("item_ring").setCreativeTab(Main.tabCrea);
+        item_ring = new Item().setUnlocalizedName("item_ring").setCreativeTab(Main.tabCrea).setMaxStackSize(16);
+
     }
 
     public static void register() {
