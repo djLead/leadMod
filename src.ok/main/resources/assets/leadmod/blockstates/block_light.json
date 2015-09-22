@@ -1,8 +1,6 @@
 {
   "variants" : {
-
       "normal": {
-
         "model": "leadmod:block_light"}
       }
   }

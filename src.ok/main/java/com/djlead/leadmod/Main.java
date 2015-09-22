@@ -1,12 +1,8 @@
 package com.djlead.leadmod;
 
-import com.djlead.leadmod.crafting.ModCrafting;
 import com.djlead.leadmod.init.MyBlocks;
 import com.djlead.leadmod.init.MyItems;
-import com.djlead.leadmod.init.MyTab;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
+//import com.djlead.leadmod.proxy.ItemRenderRegister;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -16,7 +12,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.djlead.leadmod.proxy.CommonProxy;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 /** Main Class
@@ -34,11 +29,13 @@ public class Main {
     public static CommonProxy proxy;
 
 
-    public static final MyTab tabCrea = new MyTab("tabCrea");
+
 
     // initialization
     @EventHandler    //PreInits Handler used for creating blocks, init, plugin APIs and to register item/blocks with GameRegistry
     public void preInit(FMLPreInitializationEvent event) {
+     //   proxy.preInit();
+
         MyItems.InitItem();
         MyItems.register();
         MyBlocks.InitBlocks();
@@ -48,14 +45,19 @@ public class Main {
 
     @EventHandler    // Init build ui data structures, crafting recipes and register new handler and API useage
     public void init(FMLInitializationEvent event) {
-        proxy.registerRenders();
+     //   proxy.init();
 
-        ModCrafting.makeRecipes();
+        proxy.registerRenders();
 
     }
 
     @EventHandler    //Postinit deals with communication with other mods
     public void postInit(FMLPostInitializationEvent event) {
-
+     //   proxy.postInit();
     }
+
+
+
+
+
 }
